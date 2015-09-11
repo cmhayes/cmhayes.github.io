@@ -4,21 +4,23 @@
     angular.module('mcHayes', []);
 
     function RingPhotosCtrl() {
-        this.name = "Ring photos controller";
+        var vm = this;
+
+        vm.name = "Ring photos controller";
+
+        vm.photos = [];
+
+        for(var i = 3186; i < 3202; i++) {
+            vm.photos.push('/images/IMG_' + i + '.JPG');
+        }
     }
 
     function ringPhotos() {
         return {
             restrict: 'E',
             controller: 'RingPhotosCtrl',
-            controllerAs: 'photo',
             templateUrl: 'ringPhotos/photos.html',
             link: function(scope, element) {
-                photo.photos = [];
-
-                for(var i = 3186; i < 3202; i++) {
-                    photo.photos.push('/images/IMG_' + i + '.JPG');
-                }
             }
         };
     }
