@@ -11,7 +11,7 @@
         return {
             restrict: 'E',
             controller: 'RingPhotosCtrl',
-            controllerAs: 'photo'
+            controllerAs: 'photo',
             templateUrl: 'ringPhotos/photos.html',
             link: function(scope, element) {
                 photo.photos = [];
