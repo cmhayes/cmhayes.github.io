@@ -8,11 +8,13 @@
 
         vm.name = "Ring photos controller";
 
-        vm.photos = [];
+        var photos = [];
 
         for(var i = 3186; i < 3202; i++) {
-            vm.photos.push('/images/IMG_' + i + '.JPG');
+            photos.push('/images/IMG_' + i + '.JPG');
         }
+
+        vm.photos = photos;
     }
 
     function ringPhotos() {
