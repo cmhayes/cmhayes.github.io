@@ -16,7 +16,7 @@
         return {
             restrict: 'E',
             controller: 'ringPhotosCtrl as photo',
-            templateUrl: 'photos.html',
+            templateUrl: 'ringPhotos/photos.html',
             link: function(scope, element) {
                 
             }
