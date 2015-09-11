@@ -10,7 +10,8 @@
     function ringPhotos() {
         return {
             restrict: 'E',
-            controller: 'RingPhotosCtrl as photo',
+            controller: 'RingPhotosCtrl',
+            controllerAs: 'photo'
             templateUrl: 'ringPhotos/photos.html',
             link: function(scope, element) {
                 photo.photos = [];
